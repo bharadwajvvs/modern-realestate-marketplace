@@ -2,18 +2,18 @@ import { application } from "express";
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
-    usernames: {
-        type: string,
+    username: {
+        type: String,
         required: true,
         unique: true,
     },
     email: {
-        type: string,
+        type: String,
         required: true,
         unique: true,
     },
     password: {
-        type: string,
+        type: String,
         required: true,
     }
 }, {timestamps: true});
